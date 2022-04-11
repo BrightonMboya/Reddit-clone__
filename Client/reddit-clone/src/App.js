@@ -1,14 +1,15 @@
-import './App.css';
-import NavBar from './components/NavBar';
-import PostCards from './components/PostCards';
+import "./App.css";
+import NavBar from "./components/NavBar";
+import PostCards from "./components/PostCards";
 
 function App() {
+
   return (
     <div className="">
-      <NavBar/>
-      <PostCards/>
+      <NavBar />
+      <PostCards />
 
-       
+
     </div>
   );
 }
