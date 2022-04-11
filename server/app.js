@@ -2,7 +2,7 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
-
+import subredditRouter from "./routes/subreddits.js";
 
 const app = express();
 app.use(express.json());
@@ -19,7 +19,7 @@ app.set("view engine", "ejs");
 app.get("/", (req, res) => {
   res.send("Reddit clone!");
 });
-
+app.use("/api/subreddits", subredditRouter);
 
 
 mongoose
