@@ -18,8 +18,8 @@ const PostStats = (props) => {
         />
       </div>
 
-      <div className="py-4 mr-3 grid grid-cols-2 md:flex items-stretch">
-        <FaIcons.FaCommentAlt className="fill-gray-500" size="25px"/>
+      <div className="py-4 mr-3 flex items-stretch">
+        <FaIcons.FaCommentAlt className="fill-gray-500 w-4 h-4 mt-1 mr-2" size="25px"/>
         <p className="text-sm text-gray-500  md:ml-5">{props.comments}</p>
       </div>
     </div>

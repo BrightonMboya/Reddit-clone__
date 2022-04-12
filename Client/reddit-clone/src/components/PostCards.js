@@ -1,4 +1,8 @@
-import PostStats from "./PostStats";
+import Post from "./Post";
+import img1 from '../images/img1.png';
+import img2 from '../images/img2.png';
+import img3 from '../images/img3.png';
+import img4 from '../images/img4.png';
 
 // import React, {useState} from "react";
 function PostCards(props) {
@@ -50,122 +54,70 @@ function PostCards(props) {
     <div>
       <div className="mt-5 ml-7 grid grid-flow-col grid-cols-2 mr-5 gap-3 md:ml-9 px-10">
         {/* first tile of the post card */}
-        <div>
-          <img
-            className="rounded-md shadow-md"
-            src={require("../images/img1.png")}
-            alt="img-1"
-          />
+        <Post
+          body={posts[0].body}
+          image= {img1}
+          comments={posts[0].comments}
+          time={posts[0].time}
+          author={posts[0].author}
+          votes={posts[0].votes}
+          subreddit={posts[0].subreddit}
+        />
 
-          <h3 className="mt-3 text-lg">
-            {posts[0].body}
-          </h3>
-          <p className="mt-2 text-gray-500">{posts[0].time}</p>
-          <p className="text-red-500">{posts[0].author} </p>
-
-          <p className="text-gray-500">
-            /r/<span className="text-red-500">{posts[0].subreddit} </span>
-          </p>
-          <PostStats votes={posts[0].votes} comments={posts[0].comments} />
-        </div>
-
-        {/* Second Card and so on and so on */}
-        <div>
-          <img
-            className="rounded-md shadow-md"
-            src={require("../images/img2.png")}
-            alt="img-1"
-          />
-
-          <h3 className="mt-3 text-lg">
-          {posts[1].body}
-          </h3>
-          <p className="mt-2 text-gray-500">{posts[1].time}</p>
-          <p className="text-red-500">{posts[1].author}</p>
-          <p className="text-gray-500">
-            /r/<span className="text-red-500">{posts[1].subreddit}</span>
-          </p>
-          <PostStats votes={posts[1].votes} comments={posts[1].comments} />
-        </div>
+        <Post
+          body={posts[1].body}
+          image= {img2}
+          comments={posts[1].comments}
+          votes={posts[1].votes}
+          time={posts[1].time}
+          author={posts[1].author}
+          subreddit={posts[1].subreddit}
+        />
       </div>
 
       {/* Second Row */}
       <div className="mt-8 ml-7 grid grid-flow-col grid-cols-2 mr-5 gap-3 md:ml-9 px-10">
-        {/* first tile of the post card */}
-        <div>
-          <img
-            className="rounded-md shadow-md"
-            src={require("../images/img4.png")}
-            alt="img-1"
-          />
+        <Post
+          body={posts[2].body}
+          image= {img3}
+          comments={posts[2].comments}
+          votes={posts[2].votes}
+          time={posts[2].time}
+          author={posts[2].author}
+          subreddit={posts[2].subreddit}
+        />
 
-          <h3 className="mt-3 text-lg">
-          {posts[2].body}
-          </h3>
-          <p className="mt-2 text-gray-500">{posts[2].time}</p>
-          <p className="text-red-500">{posts[2].author}</p>
-
-          <p className="text-gray-500">
-            /r/<span className="text-red-500">{posts[2].subreddit}</span>
-          </p>
-          <PostStats votes={posts[2].votes} comments={posts[2].comments} />
-        </div>
-
-        {/* Second Card and so on and so on */}
-        <div>
-          <img
-            className="rounded-md shadow-md"
-            src={require("../images/img3.png")}
-            alt="img-1"
-          />
-
-          <h3 className="mt-3 text-lg">{posts[3].body}</h3>
-          <p className="mt-2 text-gray-500">{posts[3].time}</p>
-          <p className="text-red-500">{posts[3].author}</p>
-          <p className="text-gray-500">
-            /r/<span className="text-red-500">{posts[3].subreddit} </span>
-          </p>
-          <PostStats votes={posts[3].votes} comments={posts[3].comments} />
-        </div>
+        <Post
+          body={posts[3].body}
+          image= {img4}
+          comments={posts[3].comments}
+          votes={posts[3].votes}
+          time={posts[3].time}
+          author={posts[3].author}
+          subreddit={posts[3].subreddit}
+        />
       </div>
 
       <div className="mt-8 ml-7 grid grid-flow-col grid-cols-2 mr-5 gap-3 md:ml-9 px-10">
-        {/* first tile of the post card */}
-        <div>
-          <img
-            className="rounded-md shadow-md"
-            src={require("../images/img4.png")}
-            alt="img-1"
-          />
+        <Post
+          body={posts[2].body}
+          image= {img1}
+          comments={posts[2].comments}
+          votes={posts[2].votes}
+          time={posts[2].time}
+          author={posts[2].author}
+          subreddit={posts[2].subreddit}
+        />
 
-          <h3 className="mt-3 text-lg">
-          {posts[2].body}
-          </h3>
-          <p className="mt-2 text-gray-500">{posts[2].time}</p>
-          <p className="text-red-500">{posts[2].author}</p>
-
-          <p className="text-gray-500">
-            /r/<span className="text-red-500">{posts[2].subreddit}</span>
-          </p>
-          <PostStats votes={posts[2].votes} comments={posts[2].comments} />
-        </div>
-
-        {/* Second Card and so on and so on */}
-        <div>
-          <img
-            className="rounded-md shadow-md"
-            src={require("../images/img3.png")}
-            alt="img-1"
-          />
-
-          <h3 className="mt-3 text-lg">{posts[3].body}</h3>
-          <p className="mt-2 text-gray-500">{posts[3].time}</p>
-          <p className="text-red-500">{posts[3].author}</p>
-          <p className="text-gray-500">
-            /r/<span className="text-red-500">{posts[3].subreddit} </span>
-          </p>
-          <PostStats votes={posts[3].votes} comments={posts[3].comments} />
-        </div>
+        <Post
+          body={posts[3].body}
+          comments={posts[3].comments}
+          votes={posts[3].votes}
+          image= {img2}
+          time={posts[3].time}
+          author={posts[3].author}
+          subreddit={posts[3].subreddit}
+        />
       </div>
     </div>
   );
