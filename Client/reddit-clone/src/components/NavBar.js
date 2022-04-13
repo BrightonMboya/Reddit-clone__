@@ -3,7 +3,7 @@ import AddPost from "./AddPost";
 
 function NavBar() {
   return (
-    <div className="shadow-lg">
+    <div className="shadow-lg w-full">
       <div className="ml-7 mt-8 flex items-stretch">
         <SideBar/>
         <img className="px-8 ml-5" src={require("../images/reddit-1.png")} alt="reddit-icon" />

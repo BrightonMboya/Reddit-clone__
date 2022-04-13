@@ -7,7 +7,7 @@ function AddPost() {
     <>
       {!isLoggedIn ? (
         <button onClick={() => setIsLoggedIn(!isLoggedIn)}>
-             <FaIcons.FaUserAlt className="ml-[10vh] mt-3 w-5 h-5  md:ml-[43vh] lg:ml-[150vh]" />
+             <FaIcons.FaUserAlt className="mt-3 w-5 h-5  md:ml-[43vh] lg:ml-[150vh]" />
           
         </button>
       ) : (

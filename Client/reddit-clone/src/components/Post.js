@@ -4,10 +4,11 @@ import PostStats from "./PostStats";
 function Post (props) {
   return (
     <div>
-      <div>
+      <div className="mt-5 ml-7 px-5">
         <img
           className="rounded-md shadow-md"
-          src={props.image}
+          src={process.env.PUBLIC_URL + props.image}
+          // src = {require({props.image})}
           alt="img-1"
         />
 

@@ -19,7 +19,7 @@ function SideBar() {
           </svg>
         </button>
       ) : (
-        <div className="top-0 left-0 fixed bg-slate-200 w-[39vw] h-[40vh] p-10 shadow-lg">
+        <div className="top-0 left-0 fixed bg-slate-200 w-[39vw] h-[50vh] p-10 shadow-lg">
             <button className="text-xl text-white fixed top-4 left-4" 
             onClick={() => SetIsOpen(!isOpen)} >
                 X
