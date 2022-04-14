@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as FaIcons from "react-icons/fa";
 
+
 function AddPost() {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
   return (

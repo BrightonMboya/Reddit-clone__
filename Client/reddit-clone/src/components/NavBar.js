@@ -1,5 +1,5 @@
 import SideBar from "./SideBar";
-import AddPost from "./AddPost";
+import AddPost from "./Post/AddPost";
 
 function NavBar() {
   return (

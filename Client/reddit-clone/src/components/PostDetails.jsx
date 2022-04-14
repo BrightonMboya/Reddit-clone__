@@ -1,4 +1,4 @@
-export default [
+const PostDetails = [
     {
       body: "13 years ago today, a true patriot lost his life. Rest in Peace big guy.",
       comments: 500,
@@ -39,3 +39,5 @@ export default [
       subreddit: "whitepeoplegifs",
     },
   ];
+
+export default PostDetails;
